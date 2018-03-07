@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.home.android89.FullImageActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_below="@+id/backBtn"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignBottom="@+id/nextBtn"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"/>
+
+    <ImageSwitcher
+        android:id="@+id/imageSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backBtn"
+        android:layout_alignBottom="@+id/nextBtn"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentStart="true"
+        android:scaleType="centerInside" />
+
+    <Button
+        android:id="@+id/prevBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tagList"
+        android:layout_alignParentStart="true"
+        android:text="prev"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:background="@color/foreGreen"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:onClick="prevPhoto"/>
+
+    <Button
+        android:id="@+id/moveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tagList"
+        android:layout_marginBottom="15dp"
+        android:text="Move to..."
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:background="@color/foreGreen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:onClick="moveTo"/>
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tagList"
+        android:layout_alignParentEnd="true"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:background="@color/foreGreen"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:onClick="nextPhoto"/>
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Back"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:background="@color/foreGreen"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/deletePhotoBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Delete"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:background="@color/foreGreen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:onClick="deletePhoto"/>
+
+    <Button
+        android:id="@+id/addTags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:text="Add Tag"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:background="@color/foreGreen"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:onClick="addTag"/>
+
+    <ListView
+        android:id="@+id/tagList"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" />
+
+</RelativeLayout>

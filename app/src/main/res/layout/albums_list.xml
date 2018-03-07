@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.home.android89.Albums">
+
+    <ListView
+        android:id="@+id/albums_list"
+        android:layout_width="match_parent"
+        android:layout_height="461dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <Button
+            android:id="@+id/album_save"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:onClick="createAlbum"
+            android:text="@string/createAlbum_label"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:background="@color/foreGreen"/>
+
+        <Button
+            android:id="@+id/album_cancel"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:background="@color/foreGreen"
+            android:onClick="searchPhotos"
+            android:text="@string/search_label"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

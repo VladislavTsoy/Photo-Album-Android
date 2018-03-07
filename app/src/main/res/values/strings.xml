@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Android89</string>
+
+    <string name="name_label">Name: (required)</string>
+    <string name="save_label">SAVE</string>
+    <string name="cancel_label">CANCEL</string>
+    <string name="createAlbum_label">Create New</string>
+    <string name="search_label">Search Photos</string>
+    <string name="add_photo">Add Photo</string>
+    <string name="place_label">Add Place Tag: (optional)</string>
+    <string name="person_label">Add Person Tag: (optional)</string>
+    <string name="type_search">Tag Type: ("Person" or "Place")</string>
+    <string name="value_search">Tag Value: (required)</string>
+
+</resources>
